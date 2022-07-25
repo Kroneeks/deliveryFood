@@ -25,9 +25,11 @@ async function main() {
     await categoriesCollection.insertMany(categories);
 
     let imageUrls = [
-      "https://png.pngtree.com/png-clipart/20210808/original/pngtree-big-pizza-png-png-image_6611417.png",
-      "https://png.pngtree.com/png-clipart/20210725/original/pngtree-a-big-chicken-pizza--png-png-image_6552825.jpg",
-      "https://png.pngtree.com/png-clipart/20220616/original/pngtree-yummy-big-pizza-png-png-image_8071221.png",
+      "https://res.cloudinary.com/dk3k7h7oi/image/upload/v1658767417/carbonara_xds5oq.png",
+      "https://res.cloudinary.com/dk3k7h7oi/image/upload/v1658767417/Meat__Cheese_small_yy1czd.png",
+      "https://res.cloudinary.com/dk3k7h7oi/image/upload/v1658767417/4_sezona_259x259_byd4lk.png",
+      "https://res.cloudinary.com/dk3k7h7oi/image/upload/v1658767417/myunkhenskaya_small_sw5arq.png",
+      "https://res.cloudinary.com/dk3k7h7oi/image/upload/v1658767417/Beef_BBQ_small-min_svombr.png",
     ];
 
     let products = [];

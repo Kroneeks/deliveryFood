@@ -1,8 +1,4 @@
-export const AddProduct = () => {
-  const onAddProduct = () => {
-    console.log("The product has been added to cart");
-  };
-
+export const AddProduct = ({ onAddProduct }) => {
   return (
     <div className="flex justify-end">
       <button

@@ -45,6 +45,6 @@ export const {
   clearCart,
   incrementProductAmount,
   decrementProductAmount,
-} = cartSlice.actoins;
+} = cartSlice.actions;
 
 export default cartSlice.reducer;

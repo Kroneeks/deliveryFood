@@ -4,6 +4,7 @@ import {
   fetchProducts,
   selectAllProducts,
 } from "../../stores/menu/productsSlice";
+import ProductDetailCard from "../../components/ProductDetailCard";
 
 const Menu = () => {
   const dispatch = useDispatch();
@@ -14,18 +15,14 @@ const Menu = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-white">
       {products.status === "pending" ? (
         <div>Загрузка...</div>
       ) : (
         <div className="menu-wrapper">
           {products.products.length > 0 &&
             products.products[0].products.map((product, index) => {
-              return (
-                <div className="text-white" key={index}>
-                  {product.name}
-                </div>
-              );
+              return <ProductDetailCard product={product} key={index} />;
             })}
         </div>
       )}

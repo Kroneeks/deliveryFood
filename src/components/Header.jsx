@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logoIcon from "../assets/img/logo.png";
 import cartIcon from "../assets/img/cart.png";
 
-export const Header = () => {
+export const Header = ({ cartCount }) => {
   return (
     <nav id="header" className="bg-black text-white">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -29,8 +29,13 @@ export const Header = () => {
           </Link>
         </div>
         <div className="flex items-center justify-center space-x-4">
-          <Link to="/cart">
+          <Link to="/cart" className="mr-4 relative">
             <img src={cartIcon} alt="Карта" />
+            {cartCount > 0 ? (
+              <div className="rounded-full bg-yellow-400 text-white inline-flex justify-center items-center w-full h-30px absolute -top-3 -right-4">
+                {cartCount}
+              </div>
+            ) : null}
           </Link>
           <Link to="/login">Войти</Link>
           <Link to="/register">Регистрация</Link>

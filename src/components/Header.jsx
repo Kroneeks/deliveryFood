@@ -32,7 +32,7 @@ export const Header = ({ cartCount }) => {
           <Link to="/cart" className="mr-4 relative">
             <img src={cartIcon} alt="Карта" />
             {cartCount > 0 ? (
-              <div className="rounded-full bg-yellow-400 text-white inline-flex justify-center items-center w-full h-30px absolute -top-3 -right-4">
+              <div className="rounded-full bg-yellow-400 text-white inline-flex justify-center items-center w-full absolute -top-3 -right-4">
                 {cartCount}
               </div>
             ) : null}

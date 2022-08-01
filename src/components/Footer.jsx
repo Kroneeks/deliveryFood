@@ -4,17 +4,17 @@ export const Footer = () => {
       <div class="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
         <div>
           <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase">
-            Company
+            Delivery Food
           </h2>
           <ul class="text-gray-300">
             <li class="mb-4">
               <a href="#" className=" hover:underline">
-                About
+                О нас
               </a>
             </li>
             <li class="mb-4">
               <a href="#" className="hover:underline">
-                Menu
+                Меню
               </a>
             </li>
           </ul>

@@ -38,7 +38,7 @@ export const AddressForm = ({ onTabSwitch }) => {
           placeholder="Street Address"
         />
         {errors.address && (
-          <span className="text-red-500">This field is required</span>
+          <span className="text-red-500">Это поле обязательное для ввода</span>
         )}
       </div>
       <div className="mb-4 md:flex md:justify-between">

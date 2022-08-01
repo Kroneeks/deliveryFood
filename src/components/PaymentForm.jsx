@@ -12,7 +12,9 @@ import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Button from "./elements/Button";
 
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
+const stripePromise = loadStripe(
+  "pk_test_51LRdbkJafvFPHEjB3SPnycF96tzhYJNW9vYlVk0mgXLNwNolzwnrkBI9JmJ6KduBkukdJIPoyK98CamFCFjlrDg200ZUHaS25p"
+);
 
 export const StripeWrapper = () => {
   return (
